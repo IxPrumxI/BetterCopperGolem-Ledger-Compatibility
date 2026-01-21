@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "me.prum.bettercoppergolemledgercompatibility.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+      "TransportItemsBetweenContainersMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "bettercoppergolem-ledger-compatibility",
+	"version": "${version}",
+	"name": "BetterCopperGolem-Ledger-Compatibility",
+	"description": "Makes sure that copper golems actions are still logged when using GhostSHAURMA's BetterCopperGolem mod.",
+	"authors": [
+		"IxPrumxI"
+	],
+	"contact": {
+		"sources": "https://github.com/IxPrumxI/BetterCopperGolem-Ledger-Compatibility"
+	},
+	"license": "ARR",
+	"environment": "server",
+	"entrypoints": {
+		"server": [
+			"me.prum.bettercoppergolemledgercompatibility.BetterCopperGolemLedgerCompatibility"
+		]
+	},
+	"mixins": [
+		"bettercoppergolem-ledger-compatibility.mixins.json"
+	],
+	"depends": {
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabricloader": "*",
+		"fabric-api": "*",
+		"ledger": "*",
+		"bettercoppergolem": "*"
+	}
+}
